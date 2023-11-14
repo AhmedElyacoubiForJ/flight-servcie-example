@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "0849429d-4e63-46d9-ab0e-bcbdaab7f7ee",
+		"name": "spring-transaction-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26553765"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passenger\" : {\r\n        \"name\" : \"Ahmed\",\r\n        \"email\": \"a.el_yacoubi@gmx.de\",\r\n        \"source\" :\"Essen\",\r\n        \"destination\" : \"Berlin\",\r\n        \"travelDate\"  : \"20-12-2023\",\r\n        \"pickupTime\"  : \"10 AM\",\r\n        \"arrivalTime\"  : \"13 AM\",\r\n        \"fare\"          : 180.0\r\n    },\r\n    \"payment\" : {\r\n        \"accountNumber\" : \"acc1\",\r\n        \"cardType\" : \"DEBIT\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/bookFlightTicket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"bookFlightTicket"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
